@@ -3,7 +3,7 @@
 ## The Neural Network Model Analysis
 
 ## Overview and Results
-Creating a deep learning model for a nonprofit called Alphabet Soup, a dataset of applicant information was used to predict if funding from Alphabet Soup would be successful for their ventures. Multiple models of machine learning and neural networks were used to try to reach at least 75% accuracy. The data was processed then the initial model was compliled, trained and evaluated for accuracy. After reaching only 72.65% on the first attempt, the model was optimized three addtional times to attempt to increase the accuracy. 
+Creating a deep learning model for a nonprofit called Alphabet Soup, a dataset of applicant information was used to predict if funding from Alphabet Soup would be successful for their ventures. Multiple models of machine learning and neural networks were used to try to reach at least 75% accuracy. The data was processed then the initial model was compiled, trained and evaluated for accuracy. After reaching only 72.65% on the first attempt, the model was optimized three additional times to attempt to increase the accuracy. 
 
 
 <img width="584" alt="Screenshot 2023-10-25 at 11 30 56 AM" src="https://github.com/marlablanco/Deep-Learning-Challenge/assets/131930449/de5cef54-b482-4d40-a1d2-cc1a28754eff">
@@ -63,11 +63,11 @@ ASK_AMT
 Output node is 1 because it was a binary classifier model using the sigmoid function as the output activation. 
 - 2nd model: Increased to 3 hidden layers with 80, 40, 20 neurons split. The hidden layer activation functions were still relu and the sigmoid function was also still used for the output.
 - 3rd model: Stayed with 3 hidden layers with 90, 30, 30 neurons split. The hidden layer activation functions, again, were relu with the sigmoid function for output activation.
-- 4th model: Stayed with 3 hidden layerswith 100, 50, 25 neurons split. The hidden layer activation functions, again, were relu with the sigmoid function for output activation.
+- 4th model: Stayed with 3 hidden layers with 100, 50, 25 neurons split. The hidden layer activation functions, again, were relu with the sigmoid function for output activation.
 ### - Were you able to achieve the target model performance?
 - With the first three iterations of the models, I was unable to achieve the target 75% accuracy. However, after adding back and binning the NAME column, the accuracy of the model got to 74%, which was the closest attempt. 
 ### - What steps did you take in your attempts to increase model performance?
-- With each new model, I either changed the number of hidden layers or value of neurons, and increaed the epochs each time with the intention of increasing model performance. In this case, these steps actually decreased accuracy output. The final and most successful model included 3 hidden layers but kept the epochs at 50 to try to reduce overfitting. By binning and not removing the NAME column, the final model was able to almost successfully achieve the requested accuracy, off by just 1%.
+- With each new model, I either changed the number of hidden layers or value of neurons, and increased the epochs each time with the intention of increasing model performance. In this case, these steps actually decreased accuracy output. The final and most successful model included 3 hidden layers but kept the epochs at 50 to try to reduce overfitting. By binning and not removing the NAME column, the final model was able to almost successfully achieve the requested accuracy, off by just 1%.
 
 ## Summary
-After multiple attempts at creating a neural network model that performs at a minimum of 75% accuracy for the Alphabet Soup Foundation, I was able to nearly successfully obtain desired accuracy by increasing hidden layers, changing the hidden node values, and increasing or decreasing epochs. Not removing then binning the NAME column to keep as a feature made the greatest diffrence in the end and brought the accuracy to 74%.
+After multiple attempts at creating a neural network model that performs at a minimum of 75% accuracy for the Alphabet Soup Foundation, I was able to nearly successfully obtain desired accuracy by increasing hidden layers, changing the hidden node values, and increasing or decreasing epochs. Not removing then binning the NAME column to keep as a feature made the greatest difference in the end and brought the accuracy to 74%.
